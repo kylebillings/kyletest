@@ -1,11 +1,74 @@
 
     @import url("fonts.css");
 
+    @font-face {
+  font-family: 'Grands';
+  src:url('fonts/Grands.eot');
+  src:url('fonts/Grands.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Grands.svg#Grands') format('svg'),
+    url('fonts/Grands.woff') format('woff'),
+    url('fonts/Grands.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: 'Grands';
+  font-style: normal;
+  speak: none;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+}
+.icon-twitter:before {
+  content: "\e005";
+}
+.icon-Steam:before {
+  content: "\e007";
+}
+.icon-Linked-in:before {
+  content: "\e015";
+}
+.icon-google:before {
+  content: "\e01b";
+}
+.icon-GitHub-octoface:before {
+  content: "\e01c";
+}
+.icon-GitHub-circle:before {
+  content: "\e01d";
+}
+.icon-flickr:before {
+  content: "\e01f";
+}
+.icon-facebook:before {
+  content: "\e021";
+}
+.icon-Email:before {
+  content: "\e023";
+}
+.icon-BitBucket:before {
+  content: "\e026";
+}
+.icon-YouTube-play:before {
+  content: "\e027";
+}
+
+.buttons {
+  color: #333;
+  font-size: 3em;
+  display: inline;
+}
+
+.buttons:hover {
+  color: #e74c3c;
+}
+
+
     html {
       height: 100%;
     }
     body {
-      background: #ecf0f1;
+      background: white;
       padding: 0;
       text-align: center;
       font-family: 'Gotham-Black';
@@ -253,8 +316,18 @@
       text-align: center;
     }
     .main section.page2 {
-      background: #333;
+      background: #e74c3c;
+      font-family: "Open Sans";
     }
+
+    .main section.page2 a {
+      color: #c0392b;
+    }
+
+    .main section.page2 a:hover {
+      color: #fff;
+    }
+
     .main section.page2 > img {
       position: absolute;
       top: -300px;
@@ -272,11 +345,21 @@
       color: white;
     }
     .main section.page2 h2 {
-      color: rgba(255,255,255,0.85);
+      color: white;
+      text-align: center;
+      line-height: 160%;
+      font-weight: 300;
+      font-size: 2.5em;
+    }
+
+    .main section.page2 p {
+      color: white;
       text-align: center;
       line-height: 160%;
       font-weight: 100;
+      font-size: 1.5em;
     }
+
     .viewing-page-2 .back{
       background: rgba(0, 0, 0, 0.25);
       color: #FFF;
