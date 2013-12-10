@@ -390,7 +390,18 @@
     .main section.page3 p {
       font-family: 'Gotham-Light';
     }
+
+    .main section.page3 a {
+      color: #c0392b;
+      text-decoration: none;
+      font-weight: 300;
+    }
     
+    .main section.page3 a:hover {
+      color: #333;
+      text-decoration: none;
+    }
+
     body.disabled-onepage-scroll .onepage-wrapper  section {
       min-height: 100%;
       height: auto;
@@ -535,4 +546,8 @@ body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
 
 .red {
   color: #c0392b;
+}
+
+#embedded-blog {
+  border: 1px dotted #333;
 }
