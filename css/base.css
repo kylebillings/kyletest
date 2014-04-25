@@ -163,30 +163,28 @@
 	input[type="submit"],
 	input[type="reset"],
 	input[type="button"] {
-		background: #DADFE1; /* Old browsers */
-	  border: 1px solid #aaa;
-	  border-top: 1px solid #ccc;
-	  border-left: 1px solid #ccc;
+		background: #19B5FE; /* Old browsers */
 	  -moz-border-radius: 3px;
 	  -webkit-border-radius: 3px;
+	  border: 2px solid #fff;
 	  border-radius: 3px;
-	  color: #444;
+	  color: #fff;
 	  display: inline-block;
-	  font-size: 11px;
-	  font-weight: bold;
+	  font-size: 18px;
+	  font-weight: 300;
 	  text-decoration: none;
 	  cursor: pointer;
 	  margin-bottom: 20px;
 	  line-height: normal;
 	  padding: 8px 10px;
-	  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+	  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 	.button:hover,
 	button:hover,
 	input[type="submit"]:hover,
 	input[type="reset"]:hover,
 	input[type="button"]:hover {
-		background-color: #fcfcfc;
+		background-color: #FF7F0D;
 	}
 
 	.button:active,
