@@ -47,13 +47,22 @@
 		border-collapse: collapse;
 		border-spacing: 0; }
 
+		#section-1 {
+		text-align: center;
+		padding-top: 75px;
+	}	
+
+	.center {
+		text-align: center;
+	}
+
 
 /* #Basic Styles
 ================================================== */
 	body {
-		background: #fff;
-		font: 14px/21px "Nunito", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-		color: #444;
+		background: #D64541;
+		font: 14px/21px "Open Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		color: #333;
 		-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
 		-webkit-text-size-adjust: 100%;
  }
@@ -61,10 +70,11 @@
 
 /* #Typography
 ================================================== */
+
 	h1, h2, h3, h4, h5, h6 {
-		color: #181818;
-		font-family: "Georgia", "Times New Roman", serif;
-		font-weight: normal; }
+		color: #fff;
+		font-family: "Open Sans", "Times New Roman", serif;
+		font-weight: 300; }
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
 	h1 { font-size: 46px; line-height: 50px; margin-bottom: 14px;}
 	h2 { font-size: 35px; line-height: 40px; margin-bottom: 10px; }
@@ -123,20 +133,6 @@
 		max-width: 100%;
 		height: auto; }
 
-	#main-container {
-		width: 100%;
-		background-color: #5C97BF;
-		max-height: 500px;
-		min-height: 500px;
-		text-align: center;
-		padding-top: 75px;
-	}
-
-	#main-image {
-		width: 100%;
-		display: none;
-	}
-
 /* #Buttons
 ================================================== */
 
@@ -167,13 +163,7 @@
 	input[type="submit"],
 	input[type="reset"],
 	input[type="button"] {
-		background: #eee; /* Old browsers */
-		background: #eee -moz-linear-gradient(top, rgba(255,255,255,.2) 0%, rgba(0,0,0,.2) 100%); /* FF3.6+ */
-		background: #eee -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,.2)), color-stop(100%,rgba(0,0,0,.2))); /* Chrome,Safari4+ */
-		background: #eee -webkit-linear-gradient(top, rgba(255,255,255,.2) 0%,rgba(0,0,0,.2) 100%); /* Chrome10+,Safari5.1+ */
-		background: #eee -o-linear-gradient(top, rgba(255,255,255,.2) 0%,rgba(0,0,0,.2) 100%); /* Opera11.10+ */
-		background: #eee -ms-linear-gradient(top, rgba(255,255,255,.2) 0%,rgba(0,0,0,.2) 100%); /* IE10+ */
-		background: #eee linear-gradient(top, rgba(255,255,255,.2) 0%,rgba(0,0,0,.2) 100%); /* W3C */
+		background: #DADFE1; /* Old browsers */
 	  border: 1px solid #aaa;
 	  border-top: 1px solid #ccc;
 	  border-left: 1px solid #ccc;
@@ -185,7 +175,6 @@
 	  font-size: 11px;
 	  font-weight: bold;
 	  text-decoration: none;
-	  text-shadow: 0 1px rgba(255, 255, 255, .75);
 	  cursor: pointer;
 	  margin-bottom: 20px;
 	  line-height: normal;
@@ -197,17 +186,8 @@
 	input[type="submit"]:hover,
 	input[type="reset"]:hover,
 	input[type="button"]:hover {
-		color: #222;
-		background: #ddd; /* Old browsers */
-		background: #ddd -moz-linear-gradient(top, rgba(255,255,255,.3) 0%, rgba(0,0,0,.3) 100%); /* FF3.6+ */
-		background: #ddd -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,.3)), color-stop(100%,rgba(0,0,0,.3))); /* Chrome,Safari4+ */
-		background: #ddd -webkit-linear-gradient(top, rgba(255,255,255,.3) 0%,rgba(0,0,0,.3) 100%); /* Chrome10+,Safari5.1+ */
-		background: #ddd -o-linear-gradient(top, rgba(255,255,255,.3) 0%,rgba(0,0,0,.3) 100%); /* Opera11.10+ */
-		background: #ddd -ms-linear-gradient(top, rgba(255,255,255,.3) 0%,rgba(0,0,0,.3) 100%); /* IE10+ */
-		background: #ddd linear-gradient(top, rgba(255,255,255,.3) 0%,rgba(0,0,0,.3) 100%); /* W3C */
-	  border: 1px solid #888;
-	  border-top: 1px solid #aaa;
-	  border-left: 1px solid #aaa; }
+		background-color: #fcfcfc;
+	}
 
 	.button:active,
 	button:active,
@@ -238,6 +218,17 @@
 	input::-moz-focus-inner {
     border: 0;
     padding: 0;
+	}
+
+	.btn-transparent {
+		background-color: #333;
+		border: none;
+		opacity: .5;
+		color: white;
+	}
+
+	.btn-transparent:hover {
+		opacity: .7;
 	}
 
 
