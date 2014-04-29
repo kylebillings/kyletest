@@ -25,6 +25,7 @@ body {
 }
 
 #keyboards {
+	height: 253px;
 	width: 611px;
 	margin: auto;
 }
