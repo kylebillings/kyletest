@@ -8,20 +8,19 @@
 	<!-- Basic Page Needs
   ================================================== -->
 	<meta charset="utf-8">
-	<title>Kyle Billings</title>
-	<meta name="description" content="I write content and code for companies, websites, and organizations.">
-	<meta name="author" content="Kyle Billings">
+	<title>Your Page Title Here :)</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
 
 	<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-42227870-1', 'kylebillings.com');
-  ga('send', 'pageview');
-
-</script>
+	  ga('create', 'UA-42227870-1', 'kylebillings.com');
+	  ga('send', 'pageview');
+	</script>
 
 	<!-- Mobile Specific Metas
   ================================================== -->
@@ -29,11 +28,11 @@
 
 	<!-- CSS
   ================================================== -->
-	<link rel="stylesheet" href="css/base.css">
-	<link rel="stylesheet" href="css/skeleton.css">
-	<link rel="stylesheet" href="css/layout.css">
-	<link rel="stylesheet" href="css/grid.css">
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="stylesheets/base.css">
+	<link rel="stylesheet" href="stylesheets/skeleton.css">
+	<link rel="stylesheet" href="stylesheets/layout.css">
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -46,7 +45,6 @@
 	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
 
-	<script src="js/snap.svg-min.js"></script>
 </head>
 <body>
 
@@ -55,43 +53,36 @@
 	<!-- Primary Page Layout
 	================================================== -->
 
-	<div id="section-1" class="container">
-		<h1 style="font-weight: 100">Check back soon. Thanks.</h1>
-		<br/>		
-		
-
-	<d
-		<div class="container center">
+	<div class="container glass">
+		<div class="one-third column">
+		</div>
+		<div style="margin-top: 35px; height: 350px;" class="four columns offset-by-five">
+			<div class="line-drawing" style="position: absolute;" id="logo1"></div>
+			<div class="line-drawing" style="position: absolute;" id="logo2"></div>
+			<div class="line-drawing" style="position: absolute;" id="logo3"></div>
+		</div>
+		<div class="one-third column">
+		</div>
+		<div class="sixteen columns center">
+			<hr />
+			<h1 class="remove-bottom" style="margin-top: 40px">Kyle Billings</h1>
+			<h5>UX Design & Marketing</h5>
+			<br/>
+			<h5>contact@kylebillings.com</h5>
+		</div>
+	</div><!-- container -->
+	<div class="container">
 	</div>
 
-<script>
-			(function() {
-	
-				function init() {
-					var speed = 300,
-						easing = mina.backout;
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.0.min.js"><\/script>')</script>
+<script src="js/jquery.lazylinepainter-1.1.min.js"></script>
+<script src="js/raphael-min.js"></script>
+<script src="js/logo1.js"></script>
+<script src="js/logo2.js"></script>
+<script src="js/logo3.js"></script>
 
-					[].slice.call ( document.querySelectorAll( '#grid > a' ) ).forEach( function( el ) {
-						var s = Snap( el.querySelector( 'svg' ) ), path = s.select( 'path' ),
-							pathConfig = {
-								from : path.attr( 'd' ),
-								to : el.getAttribute( 'data-path-hover' )
-							};
 
-						el.addEventListener( 'mouseenter', function() {
-							path.animate( { 'path' : pathConfig.to }, speed, easing );
-						} );
-
-						el.addEventListener( 'mouseleave', function() {
-							path.animate( { 'path' : pathConfig.from }, speed, easing );
-						} );
-					} );
-				}
-
-				init();
-
-			})();
-		</script>
 <!-- End Document
 ================================================== -->
 </body>
