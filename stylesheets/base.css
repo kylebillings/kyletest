@@ -66,11 +66,11 @@
 /* #Typography
 ================================================== */
 	h1, h2, h3, h4, h5, h6 {
-		color: #181818;
+		color: #333;
 		font-family: "Roboto Slab", "Times New Roman", serif;
 		font-weight: 100; }
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
-	h1 { font-size: 46px; line-height: 50px; margin-bottom: 14px;}
+	h1 { font-size: 60px; line-height: 67px; margin-bottom: 14px;}
 	h2 { font-size: 35px; line-height: 40px; margin-bottom: 10px; }
 	h3 { font-size: 28px; line-height: 34px; margin-bottom: 8px; }
 	h4 { font-size: 21px; line-height: 30px; margin-bottom: 4px; }
@@ -270,17 +270,23 @@
 	.half-bottom { margin-bottom: 10px !important; }
 	.add-bottom { margin-bottom: 20px !important; }
 
-	.glass::before {
-  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/28727/pelican.jpg');
-  /* Prefix free isn't picking up this one */
-  -webkit-filter: url('#blur');
-  filter: url('#blur');
-  -webkit-filter: blur(5px);
-  filter: blur(5px);
-  background-size: cover;
-  opacity: 0.4;
+
+#nav {
+	margin: 13px 0 0 0;
+	float: right;
+	text-align: right;
 }
 
-.glass {
-  background-color: white;
+#nav ul li{
+	display: inline;
+	margin: 0 20px 0 0;
+	margin-bottom: 130px;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	color: #D64541;
 }
