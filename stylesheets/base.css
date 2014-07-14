@@ -51,7 +51,10 @@
 /* #Basic Styles
 ================================================== */
 	body {
-		background: #fff;
+		background: #47a4b0;
+		background-image: url('../images/poly.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
 		font: 14px/21px "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 		color: #444;
 		-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
@@ -66,9 +69,8 @@
 /* #Typography
 ================================================== */
 	h1, h2, h3, h4, h5, h6 {
-		color: #333;
-		font-family: "Roboto Slab", "Times New Roman", serif;
-		font-weight: 400; }
+		font-family: "Alegreya Sans", "Times New Roman", serif;
+		font-weight: 100; }
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
 	h1 { font-size: 60px; line-height: 67px; margin-bottom: 14px;}
 	h2 { font-size: 35px; line-height: 40px; margin-bottom: 10px; }
@@ -271,16 +273,9 @@
 	.add-bottom { margin-bottom: 20px !important; }
 
 
-#nav {
-	margin: 13px 0 0 0;
-	float: right;
-	text-align: right;
-}
-
-#nav ul li{
-	display: inline;
-	margin: 0 20px 0 0;
-	margin-bottom: 130px;
+#name {
+	margin-top: 125px;
+	color: #fff;
 }
 
 a {
