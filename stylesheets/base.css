@@ -278,6 +278,10 @@
 	color: #fff;
 }
 
+#name h1 {
+	font-size: 10em;
+}
+
 a {
 	text-decoration: none;
 }
