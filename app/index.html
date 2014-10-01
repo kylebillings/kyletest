@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Kyle Billings | Designer</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/css/normalize.css">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/css/main.css">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bower_components/magnific-popup/dist/magnific-popup.css">
+  <link rel="stylesheet" href="app.css"/>
+  <script src="bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
+</head>
+<body>
+<div id="background1" class="mouse-bg"></div>
+<div id="background2" class="mouse-bg"></div>
+<!--<div class="navbar">
+  <ul class="menu nav nav-tabs" role="tablist">
+      <li id="tab-1" class="text-center"><a href="#/view1">Option Here</a></li>
+      <li id="tab-2" class="text-center"><a href="#/view2">Alternative Here</a></li>
+  </ul>
+</div>-->
+
+
+  <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+  <div id="highlight"></div>
+  <section id="main">
+    <div class="container-fluid text-center">
+      <div data-fitter-happier-text class="">Kyle Billings.</div>
+      <div data-fitter-happier-text class="">UX // UI Designer for Gene Guru</div>
+    </div>
+  </section>
+  <br>
+  <div ng-view></div>
+
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/impulse/impulse.min.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+  <script src="bower_components/masonry/dist/masonry.pkgd.min.js"></script>
+  <script src="fitter.js"></script>
+  <script src="app.js"></script>
+  <script src="mouse.parallax.js"></script>
+  <script src="view1/view1.js"></script>
+  <script src="view2/view2.js"></script>
+  <script src="components/version/version.js"></script>
+  <script src="components/version/version-directive.js"></script>
+  <script src="components/version/interpolate-filter.js"></script>
+
+  <script>
+    var nodes = document.querySelectorAll('[data-fitter-happier-text]');
+    fitterHappierText(nodes, { baseline: 8 });
+  </script>
+  <script>
+  $(document).ready(function() {
+  $('#background1').mouseParallax({ moveFactor: 1 });
+  $('#background2').mouseParallax({ moveFactor: 5 });
+  });
+  </script>
+</body>
+</html>

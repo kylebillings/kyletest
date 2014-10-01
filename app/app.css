@@ -1,0 +1,142 @@
+/* app css stylesheet */
+
+@font-face {
+    font-family: 'sinanova-regularregular';
+    src: url('sinanova_regular/SinaNovaReg-webfont.eot');
+    src: url('sinanova_regular/SinaNovaReg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('sinanova_regular/SinaNovaReg-webfont.woff2') format('woff2'),
+         url('sinanova_regular/SinaNovaReg-webfont.woff') format('woff'),
+         url('sinanova_regular/SinaNovaReg-webfont.ttf') format('truetype'),
+         url('sinanova_regular/SinaNovaReg-webfont.svg#sinanova-regularregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  font-family: "sinanova-regularregular", "Helvetica", "Garamond", Serif;
+  font-size: 20px;
+  line-height: 28px;
+  margin: 0 auto;
+  background-color: #fff;
+  color: #333;
+}
+h1 {
+  font-size: 90px;
+  line-height: 112px;
+  margin-top: 56px;
+  margin-bottom: 28px;
+}
+h2 {
+  font-size: 54px;
+  line-height: 56px;
+  margin-top: 56px;
+  margin-bottom: 28px;
+}
+h3 {
+  font-size: 33px;
+  line-height: 56px;
+  margin-top: 28px;
+  margin-bottom: 28px;
+}
+h4 {
+  font-size: 20px;
+  line-height: 28px;
+  margin-top: 28px;
+  margin-bottom: 28px;
+}
+p, ol, pre, table, blockquote {
+  margin-top: 28px;
+  margin-bottom: 28px;
+}
+
+/* Sanitation */
+hr {
+  border: 1px solid;
+  margin: -1px 0;
+}
+ul ul, ol ol, ul ol, ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+b, strong, em, small, code {
+  line-height: 1;
+}
+sup, sub {
+  vertical-align: baseline;
+  position: relative;
+  top: -0.4em;
+}
+sub {
+  top: 0.4em;
+}
+.menu {
+  list-style: none;
+  border-bottom: none;
+  margin-bottom: 2em;
+  width: 100%;
+  position: fixed;
+}
+.menu a {
+    color: #333;
+}
+#tab-1 {
+  display: inline;
+  position: relative;
+  width: 50%;
+  background-color: #fcfcfc;
+  margin: 0px;
+  padding-top: 0px;
+}
+#tab-1 > a {
+  border-radius: 0px;
+  border: none;
+  margin: 0px;
+  padding-top: 0px;
+}
+#tab-2 {
+  display: inline;
+  position: relative;
+  width: 50%;
+  background-color: #fcfcfc;
+  margin: 0px;
+  padding-top: 0px;
+}
+#tab-2 > a {
+  border-radius: 0px;
+  border: none;
+  margin: 0px;
+  padding-top: 0px;
+}
+#background1 {
+background-image: url('');
+}
+#background2 {
+background-image: url('');
+}
+.mouse-bg {
+left: 0;
+right: 0;
+bottom: 0;
+top: 0;
+position: fixed;
+z-index: -1;
+}
+#highlight {
+  position: absolute;
+  background-color: yellow;
+  z-index: -1;
+  height: 100px;
+  width: 70%;
+  top: 10%;
+}
+.item { width: 30%; background-color: red; display: inline-block;}
+.item > img {
+    overflow: hidden;
+}
+.item.item-feat { width: 50%; background-color: yellow;}
+.navbar {
+  border: none;
+}
+#main {
+  margin-top: 30px;
+}
