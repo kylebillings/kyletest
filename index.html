@@ -30,21 +30,51 @@
   <![endif]-->
   
   <section id="main">
-    <div class="container-fluid text-left">
-      <div data-fitter-happier-text class="">Kyle Billings</div>
-      <div data-fitter-happier-text class="">A UX Designer In San Francisco.</div>
-      <div data-fitter-happier-text class=" ">Born and raised in central Massachusetts</div>
-      <div data-fitter-happier-text class="">Schooled at Berklee College of Music</div>
-      <div data-fitter-happier-text class="">Made websites & took photos for free tickets to shows</div>
-      <div data-fitter-happier-text class="">Began working as a UI designer</div>
-      <div data-fitter-happier-text class="">Frequented online tutorials and StackOverflow</div>
-      <div data-fitter-happier-text class="">Learned enough to start making friends in Tech</div>
-      <div data-fitter-happier-text class="">Fell in love with product design</div>
-      <div data-fitter-happier-text class="">Freelanced for a while</div>
-      <div data-fitter-happier-text class="">Started working for a biotech company</div>
-      <div data-fitter-happier-text class="">As Lead Designer</div>
-      <div data-fitter-happier-text class="">Moved across the country to San Francisco</div>
-      <div data-fitter-happier-text class="">Currently loving it</div>
+    <div class="container">
+      <div class="row text-center">
+        <h1 class="remove-bottom">Kyle Billings</h1>
+        <h3 class="remove-top">UX Designer</h3>
+      </div>
+    </div>
+  </section>
+  <section id="content">
+    <div class="block">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-8">
+            <p><span>Gene Guru</span></p>
+          </div>
+          <div class="col-xs-4 thumbnail-image">
+            <!--<img class="img-responsive" src="images/939.png" alt="Ekko">-->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="block">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-8">
+            <p><span>Ekko.fm</span></p>
+          </div>
+          <div class="col-xs-4 thumbnail-image">
+            <!--<img class="img-responsive" src="images/939.png" alt="Ekko">-->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="block">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-8">
+            <p><span>Highlighter</span></p>
+          </div>
+          <div class="col-xs-4 thumbnail-image">
+            <!--<img class="img-responsive" src="images/939.png" alt="Ekko">-->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="block">
     </div>
   </section>
   <br>
@@ -59,7 +89,6 @@
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script src="bower_components/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
   <script src="bower_components/masonry/dist/masonry.pkgd.min.js"></script>
-  <script src="fitter.js"></script>
   <script src="app.js"></script>
   <script src="mouse.parallax.js"></script>
   <script src="view1/view1.js"></script>
@@ -68,10 +97,6 @@
   <script src="components/version/version-directive.js"></script>
   <script src="components/version/interpolate-filter.js"></script>
 
-  <script>
-    var nodes = document.querySelectorAll('[data-fitter-happier-text]');
-    fitterHappierText(nodes, { baseline: 8 });
-  </script>
   <script>
   $(document).ready(function() {
   $('#background1').mouseParallax({ moveFactor: 1 });
