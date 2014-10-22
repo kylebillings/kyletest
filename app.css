@@ -188,3 +188,6 @@ z-index: -1;
 .remove-top {
   margin-top: 0px;
 }
+.gray {
+  color: rgba(255,255,255,0.5);
+}
