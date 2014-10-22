@@ -17,7 +17,7 @@ $(document).ready(function(){
 	if (n > 21 || n < 6)
 	  // If time is after 9PM or before 6AM, apply night theme to ‘body’
 	  document.body.className = "night";
-	else if (n > 17 && n < 21)
+	else if (n => 17 && n < 21)
 	  // If time is between 5PM – 9PM sunset theme to ‘body’
 	  document.body.className = "sunset";
 	else
