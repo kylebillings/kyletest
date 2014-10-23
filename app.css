@@ -95,6 +95,12 @@ sup, sub {
 sub {
   top: 0.4em;
 }
+a {
+  color: #fff;
+}
+a:hover {
+  color: #fff;
+}
 .container-fluid {
   overflow: visible;
 }
@@ -190,4 +196,16 @@ z-index: -1;
 }
 .gray {
   color: rgba(255,255,255,0.5);
+}
+#contact {
+  margin-top: 40px;
+}
+#contact i {
+  color: rgba(255,255,255,0.5);
+}
+#contact i:hover {
+  color: #fff;
+}
+.jumbotron {
+  background: none;
 }
