@@ -9,6 +9,15 @@ body {
   line-height: 28px;
   margin: 0 auto;
   color: #fff;
+  background: #ff7b0d;
+  background: -moz-linear-gradient(45deg,  #ff7b0d 0%, #913ed1 100%);
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#ff7b0d), color-stop(100%,#913ed1));
+  background: -webkit-linear-gradient(45deg,  #ff7b0d 0%,#913ed1 100%);
+  background: -o-linear-gradient(45deg,  #ff7b0d 0%,#913ed1 100%);
+  background: -ms-linear-gradient(45deg,  #ff7b0d 0%,#913ed1 100%);
+  background: linear-gradient(45deg,  #ff7b0d 0%,#913ed1 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff7b0d', endColorstr='#913ed1',GradientType=1 ); 
+  background-size: 200% 200%; 
 }
 .day {
   background: #1e5799;
