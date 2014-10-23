@@ -218,3 +218,7 @@ z-index: -1;
 .jumbotron {
   background: none;
 }
+#back {
+  position: absolute;
+  padding: 20px;
+}
