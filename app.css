@@ -17,7 +17,7 @@ body {
   background: -ms-linear-gradient(45deg,  #ff7b0d 0%,#913ed1 100%);
   background: linear-gradient(45deg,  #ff7b0d 0%,#913ed1 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff7b0d', endColorstr='#913ed1',GradientType=1 ); 
-  background-size: 200% 200%; 
+  background-attachment: fixed;
 }
 .day {
   background: #1e5799;
@@ -28,7 +28,7 @@ body {
   background: -ms-linear-gradient(45deg,  #1e5799 0%,#2989d8 50%,#7db9e8 100%);
   background: linear-gradient(45deg,  #1e5799 0%,#2989d8 50%,#7db9e8 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=1 );
-  background-size: 200% 200%;
+  background-attachment: fixed;
 }
 .night {
   background: #0f1219;
@@ -39,7 +39,7 @@ body {
   background: -ms-linear-gradient(45deg,  #0f1219 0%,#3f4c6b 100%);
   background: linear-gradient(45deg,  #0f1219 0%,#3f4c6b 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f1219', endColorstr='#3f4c6b',GradientType=1 );
-  background-size: 200% 200%;
+  background-attachment: fixed;
 }
 .sunset {
   background: #ff7b0d;
@@ -50,8 +50,24 @@ body {
   background: -ms-linear-gradient(45deg,  #ff7b0d 0%,#913ed1 100%);
   background: linear-gradient(45deg,  #ff7b0d 0%,#913ed1 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff7b0d', endColorstr='#913ed1',GradientType=1 ); 
-  background-size: 200% 200%; 
+  background-attachment: fixed;
 }
+.gold {
+  background: #caa12f;
+  background: -moz-linear-gradient(45deg,  #caa12f 0%, #fefe8e 100%);
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#caa12f), color-stop(100%,#fefe8e));
+  background: -webkit-linear-gradient(45deg,  #caa12f 0%,#fefe8e 100%);
+  background: -o-linear-gradient(45deg,  #caa12f 0%,#fefe8e 100%);
+  background: -ms-linear-gradient(45deg,  #caa12f 0%,#fefe8e 100%);
+  background: linear-gradient(45deg,  #caa12f 0%,#fefe8e 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#caa12f', endColorstr='#fefe8e',GradientType=1 );
+  background-attachment: fixed;
+}
+#audio-player {
+  position: fixed;
+  bottom: 0;
+}
+
 h1, h2 {
   font-family: "Josefin Slab";
 }
@@ -187,9 +203,6 @@ z-index: -1;
 .navbar {
   border: none;
 }
-#main {
-  margin-top: 30px;
-}
 .thumbnail-image {
   padding: 0px !important;
 }
@@ -206,15 +219,8 @@ z-index: -1;
 .gray {
   color: rgba(255,255,255,0.5);
 }
-#contact {
-  padding: 40px;
-}
-#contact i {
-  font-size: 1.5em;
-  color: rgba(255,255,255,0.5);
-}
-#contact i:hover {
-  color: #fff;
+#about {
+  margin-top: 120px;
 }
 .jumbotron {
   background: none;
@@ -223,28 +229,49 @@ z-index: -1;
   position: absolute;
   padding: 20px;
 }
-.slide {
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
+.off-screen {
+  height: 1px;
+  left: -50000px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 1px;
 }
-.slide.ng-enter,
-.slide.ng-leave {
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    transition: all 1s ease;
+#process i {
+  font-size: 2em;
 }
-.slide.ng-enter {
-    left: 100%;
+#footer-top {
+color: #fff;
+padding: 35px 0 30px;
+transform:  rotate(2deg) scale(1) skew(3deg) translate(0px);-webkit-transform:  rotate(2deg) scale(1) skew(3deg) translate(0px);-moz-transform: rotate(2deg) scale(1) skew(3deg) translate(0px);-o-transform:  rotate(2deg) scale(1) skew(3deg) translate(0px);-ms-transform:  rotate(2deg) scale(1) skew(3deg) translate(0px); 
+margin-bottom: -26px; /* Added */
 }
-.slide.ng-enter-active {
-    left: 0;
+
+/* Added */
+#footer-top .container {
+  padding-bottom: 30px;
 }
-.slide.ng-leave {
-    left: 0;
+
+#footer-top3 {
+color: #333;
+background-color: #fff;
+background: #fff;
+color: #333;
+transform:  rotate(358deg) scale(1) skew(-2deg) translate(0px);
+-webkit-transform:  rotate(358deg) scale(1) skew(-2deg) translate(0px);
+-moz-transform: rotate(358deg) scale(1) skew(-2deg) translate(0px);
+-o-transform:  rotate(358deg) scale(1) skew(-2deg) translate(0px);
+-ms-transform:  rotate(358deg) scale(1) skew(-2deg) translate(0px);
 }
-.slide.ng-leave-active {
-    left: -100%;
+
+#footer-bottom {
+  color: #333;
+  background-color: #fff;
+  font-size: 0.916em;
+  padding: 30px 0;
+  position: relative; /* Added */
 }
+
+
+
+

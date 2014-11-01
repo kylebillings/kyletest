@@ -3,11 +3,15 @@
 // Declare app level module which depends on views, and components
 angular.module('myApp', [
   'ngRoute',
+  'ngAnimate',
   'myApp.view1',
   'myApp.view2',
   'myApp.view3',
   'myApp.view4',
   'myApp.view5',
+  'myApp.view6',
+  'myApp.view7',
+  'myApp.view8',
   'myApp.version'
 ]).
 config(['$routeProvider', function($routeProvider) {
@@ -28,16 +32,11 @@ $(document).ready(function(){
 	  document.body.className = "day";
 });
 
-$('.heart').on('click', function() {
-  
-  var $this = $(this);
-  
-  $this.addClass('beating');
-  
-  //setTimeout(function() {
-  //  $this.removeClass('beating');
-  //}, 500);
+cheet('g o l d', function () {
+  document.body.className = "gold";
+  console.log("Stay Golden!")
 });
+
 ;(function ($) {
     $('#main').smoothState();
 })(jQuery);
