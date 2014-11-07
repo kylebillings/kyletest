@@ -110,7 +110,7 @@
     <div class="block">
     </div>-->
   </section>
-  <section id="about">
+  <!--<section id="about">
       <div id="footer-top3">
     <div id="footer-top">
       <div class="container clearfix">
@@ -119,19 +119,46 @@
   </div>
   <div id="footer-bottom">
     <div class="container clearfix">
-      <h2 class="remove-top">Words on Words</h2>
-      <p>Words and Words and more words and words and more words and words and words and more words and words and words and more words and words and words and more words and words and words and more words and words and words and more words and words and words and more words and words and words and more words and words and words and more words and words and words and more words and words and words and more words and words and words and more words and words and words and more words and words and words and more words and </p>
+      <h2 class="remove-top">Bunch of stuff, man.</h2>
+      <p>Hey!</p>
       <div class="row">
         <div class="col-sm-6">
-          <img class="img-responsive" src="images/billings.jpg" alt="examples">
+          <img class="img-responsive circle" src="images/kyle.jpg" alt="examples">
         </div>
         <div class="col-sm-6">
           <p>
             Words on words on words on words on more words on words on words. Some sort of picture description here, man. Blah blah blah blah blah blah and stuff. Filler text and things. Yeah, dude. mhm.. yup. 
           </p>
-          <h2>Another Comment.</h2>
+          <h2>Cheers!</h2>
         </div>
       </div>
     </div>
   </div>
+  <footer id="contact" class="hide">
+    <div class="container">
+      <div class="row text-center">
+        <a href="mailto:contact@kylebillings.com"><i class="fa fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>-->
   </section>
+<script>
+
+$(function() {
+     var footer = $(".hide");
+     $(window).scroll(function() {    
+         var scroll = $(window).scrollTop();
+     
+         if (scroll >= 300) {
+                  footer.removeClass('hide').addClass('show');
+              } else {
+                  footer.removeClass('show').addClass('hide');
+              }
+     });
+ });
+        $(window).scroll(function() {
+          var scroll = $(window).scrollTop();
+          
+          
+        });
+</script>

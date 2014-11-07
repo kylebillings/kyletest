@@ -63,6 +63,11 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#caa12f', endColorstr='#fefe8e',GradientType=1 );
   background-attachment: fixed;
 }
+#particles {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
 #audio-player {
   position: fixed;
   bottom: 0;
@@ -221,6 +226,7 @@ z-index: -1;
 }
 #about {
   margin-top: 120px;
+  margin-bottom: 70px;
 }
 .jumbotron {
   background: none;
@@ -271,7 +277,22 @@ transform:  rotate(358deg) scale(1) skew(-2deg) translate(0px);
   padding: 30px 0;
   position: relative; /* Added */
 }
-
-
-
+.circle {
+  border-radius: 2000px;
+}
+#contact {
+  height:70px;
+  padding-top: 23px;
+  width: 100%;
+  background-color: #333;
+  position: fixed;
+  bottom: 0;
+  z-index: -10;
+}
+#contact .hide {
+  display: none;
+}
+#contact .show {
+  display: block;
+}
 
