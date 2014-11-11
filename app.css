@@ -289,10 +289,13 @@ transform:  rotate(358deg) scale(1) skew(-2deg) translate(0px);
   bottom: 0;
   z-index: -10;
 }
-#contact .hide {
+.hide {
   display: none;
 }
-#contact .show {
+.show {
   display: block;
 }
-
+#client-list p {
+  color: #DBDBDB;
+  margin: 0;
+}

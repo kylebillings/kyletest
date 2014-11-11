@@ -45,5 +45,22 @@
   <script src="components/version/version.js"></script>
   <script src="components/version/version-directive.js"></script>
   <script src="components/version/interpolate-filter.js"></script>
+  <script type="text/javascript">
+ 
+(function($) {
+    $(document).ready(function(){
+ 
+        $(window).scroll(function(){
+            if ($(this).scrollTop() > 800) {
+              $("#contact").addClass('show').removeClass('hide');
+            } else {
+              $("#contact").addClass('hide').removeClass('show');
+            }
+        });
+ 
+    });
+})(jQuery);
+ 
+</script>
 </body>
 </html>
