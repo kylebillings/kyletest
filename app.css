@@ -255,6 +255,10 @@ transform:  rotate(2deg) scale(1) skew(3deg) translate(0px);-webkit-transform:  
 margin-bottom: -50px; /* Added */
 }
 
+#highlighter a {
+  color: #333;
+}
+
 /* Added */
 #footer-top .container {
   padding-bottom: 30px;
