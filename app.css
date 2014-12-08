@@ -62,7 +62,7 @@ body {
   background: linear-gradient(45deg,  #caa12f 0%,#fefe8e 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#caa12f', endColorstr='#fefe8e',GradientType=1 );
   background-attachment: fixed;
-  cursor: url(images/coin.png);
+  cursor: url(cursor.cur), auto;
 }
 #particles {
   position: fixed;
